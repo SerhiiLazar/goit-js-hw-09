@@ -16,3 +16,27 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input {
+  margin-left: 10px;
+}
+
+.timer {
+  display: flex;
+}
+.field { 
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.value {
+  font-size: 25px;
+  letter-spacing: 2px;
+  border: 2px solid #212121;
+  padding: 5px;
+
+  background-color: rgb(92, 125, 222, 0.4);
+}
+
