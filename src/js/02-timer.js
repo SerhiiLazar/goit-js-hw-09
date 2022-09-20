@@ -7,17 +7,16 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const refs = {
     input: document.querySelector('#datetime-picker'),
-    buttonStart: document.querySelector('button[data-start]'),
-    timerEl: document.querySelector('.timer'),
-    daysEl: document.querySelector('span[data-days]'),
-    hoursEl: document.querySelector('span[data-hours]'),
-    minutesEl: document.querySelector('span[data-minutes]'),
-    secondsEl: document.querySelector('span[data-seconds]'),
+    buttonStart: document.querySelector('[data-start]'),
+    daysEl: document.querySelector('[data-days]'),
+    hoursEl: document.querySelector('[data-hours]'),
+    minutesEl: document.querySelector('[data-minutes]'),
+    secondsEl: document.querySelector('[data-seconds]'),
 }
 
 
 const currentTime = Date.now();
-const ONE_SECONDS = 1000;
+const ONE_SECONDS = 500;
 let selectedTime = null;
 let deltaTime = null;
 let intervalId = null;
